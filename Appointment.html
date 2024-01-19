@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Pages/appointment.css">
+</head>
+<body>
+    <div class="background">
+   <div class="booking-form">
+    <h2>Appointment booking</h2>
+    <form action="Index.php" method="post">
+        <label for="name">Name</label>
+        <input type="text" placeholder="Alex spence" name="name" id="name" required> 
+        <label for="email">Email</label>
+        <input type="email" placeholder="email@gmail.com" name="email" id="email" required>
+        <label for="county">County</label>
+        <input type="text" placeholder="County" name="county" id="county" required>
+        <label for="Postal code">Postal code</label>
+        <input type="text" placeholder="05150" name="Postal code" id="Postal code" required>
+        <label for="Appointment-date">Appointment date</label>
+        <input type="text" placeholder="Date" name="Appointment_date" id="Appointment_date" onfocus="(this.type ='Date') ">
+        <button type="submt">BOOK NOW</button>
+    </form>
+   </div> 
+    </div>
+</body>
+</html>

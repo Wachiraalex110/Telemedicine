@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.background{
+    background-image: url(./images/Register.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body{
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+.container{
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+#contact{
+background-color: rgba(220, 255, 66, 0.7);
+padding: 20px;
+margin: 50px 0;
+}
+#contact h1{
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    color: blue;
+}
+#contact input, button{
+    font: 400 15px sans-serif;
+}
+#contact h3{
+  margin: 5px 0px 15px;
+  text-align: center;
+}
+.row{
+    display: flex;
+    width: 100% !important;
+    padding: 20px 0px;
+}
+.row .column{
+    margin: 0px 20px;
+    width: 50%;
+}
+fieldset{
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    width: 100%;
+}
+#contact input {
+    width: 100%;
+    border: 1px solid rgba(150, 150, 150);
+    background-color: white;
+    padding: 10px;
+    margin: 5px 0;
+}
+input [type = 'radio'] {
+    width: 10% !important;
+}
+#contact .row .radio{
+    border: 1px solid rgba(150, 150, 150);
+    background-color: white;
+    margin: 7px 0 10px;
+    padding: 5px;
+}
+#contact .row .idcard{
+    display: flex;
+    height: 50px !important;
+    margin: 5px 0;
+}
+#contact .row .idcard :first-child{
+    width: 80px;
+}
+#contact .row .idcard :last-child{
+    width: 40px;
+}
+#contact .row #phone{
+    max-width: 100% !important;
+    padding-right: 80px;
+}
+#contact input :hover{
+    transition: border-color 0.3s ease-out;
+    border: 1px solid rgba(68, 68, 68);
+}
+#contact button{
+    outline: none;
+    border: none;
+    background-color: blue;
+    color: white;
+    margin: 0 0 5px 40%;
+    font-size: 17px;
+    width: 150px;
+}
+#contact button:hover{
+    background-color: rgb(0, 0, 255, 0.8);
+}
+#contact button:focus{
+    outline: 0;
+    border: 1px solid red;
+}
+
+/*responsive mode */
+@media screen and (min-width: 580px){
+    .row{
+        flex-direction: column;
+    }
+    .row .column {
+        max-width: 90% !important;
+    }
+    #contact .row #phone{
+        padding-right: 180px;
+    }
+}
+    

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.tutorialjinni.com/intl-trl-input/17.0.8/js/css/intlTelInput.css"/>
+    <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <link rel="stylesheet" href="../Pages/Register.css">
+</head>
+<body>
+    <div class="background">
+    <div class="container">
+        <form id="contact" action="../Reg.php" method="post">
+            <h1>Registration form</h1>
+            <h3>Fill the form below and click submit button</h3>
+            <div class="row">
+                <!--first column-->
+                <div class="column">
+                    <fieldset>
+                        <input type="text" placeholder="fullname" name="fname" required autofocus>
+                    </fieldset>
+                        <fieldset>
+                            <input type="email" placeholder="your email" name="email" required autofocus>
+                        </fieldset>
+                            <fieldset>
+                                <input type="text" placeholder="Date of birth" name="Date" onfocus="(this.type ='Date') ">
+                            </fieldset>
+                                <!--Adding all countrycodes-->
+                                <fieldset>
+                                    <input type="text" placeholder="phone number" name="phone" id="phone" required autofocus>
+                                </fieldset>
+                </div>
+                    <!--first column-->
+                    <div class="column">
+                        <fieldset>
+                            <p>What is your gender?</p>
+                            <div class="radio">
+                                <input type="radio" id="male" name="Gender" required>
+                                <label for="male">Male</label>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" id="female" name="Gender" required>
+                                <label for="female">Female</label>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <label for="idcard">enter your Id number in given format.</label>
+                                <div class="idcard">
+                                    <input type="text" name="idcard" pattern="[0-9]{7}"placeholder="#######" maxlength="7"> -
+                                    <input type="text" name="idcard" pattern="[0-9]{5}"placeholder="#####" maxlength="5"> -
+                                    <input type="text" name="idcard" pattern="[0-9]{1}"placeholder="#" maxlength="1"> 
+                                </div>
+                        </fieldset>
+                        <fieldset>
+                            <p>Upload file</p>
+                            <input type="File" id="file" name="file" required>
+                        </fieldset>
+                    </div>
+            </div>
+            <fieldset>
+            <!--Submit button-->
+            <button type="submit" id="button">Submit now</button>
+            </fieldset>
+        </form>
+    </div>
+    </div>
+</body>
+</html>
